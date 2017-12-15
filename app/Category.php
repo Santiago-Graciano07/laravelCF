@@ -14,6 +14,6 @@ class Category extends Model
     //relacion 1 a muchos
 
     public function articles(){
-        return $this->hasMany('App\Article');
+        return $this->hasMany('App\Article')->withTimestamps();
     }
 }

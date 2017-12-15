@@ -10,7 +10,14 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+/*
+Podemos tener rutas de tipo GET, POST, DELETE, PUT, RESOURCE
+*/
 
 Route::get('/', function () {
     return view('welcome');
+});
+
+Route::get('/articles', function(){
+    echo 'Esta es la session de articulos';
 });
